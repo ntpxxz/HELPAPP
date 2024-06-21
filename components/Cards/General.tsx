@@ -1,10 +1,13 @@
 import React from 'react'
 // install (please try to align the version of installed @nivo packages)
 // yarn add @nivo/bump
-import { ResponsiveBump } from '@/nivo/bump'
+import { ResponsiveBump } from '@nivo/bump'
 import {
     Card,
     CardContent,
+    CardHeader,
+    CardTitle,
+    CardDescription
     } from "@/components/ui/card"
   
 
@@ -55,7 +58,7 @@ const MyResponsiveBump = (props:any) => {
             legendOffset: -40,
             truncateTickAt: 0
         }}
-        margin={{ top: 40, right: 100, bottom: 40, left: 60 }}
+        margin={{ top: 20, right: 60, bottom: 20, left: 20 }}
         axisRight={null}
     />
 }
@@ -363,8 +366,14 @@ const MyResponsiveBump = (props:any) => {
         }
     ]       
       
-  return <Card className='w-full h-[400px]'>
-    <MyResponsiveBump data={data}/>
+  return <Card className='w-full'>
+    <CardHeader>
+        <CardTitle>This Week</CardTitle>
+        <CardDescription>These are the result of week</CardDescription>
+      </CardHeader>
+      <CardContent className="grid gap-2 max-h-[300px] h-full">
+      <MyResponsiveBump data={data}/>
+        </CardContent>
+   
   </Card>  
 }
-

@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/db.js", "lib/db.js", "../useritem.d.ts", "config/database.ts", "models/postModel.js", "models/case/caseModel.js", "app/api/cases2.ts", "models/case/caseModel.ts", "app/api/cases2.ts", "app/caseModel.ts", "app/api/cases2.ts", "lib/database.js", "app/jobs/page.jsx", ".next/types/app/jobs/create/page.tsx"],
   "exclude": ["node_modules"]
 }

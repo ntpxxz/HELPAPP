@@ -1,0 +1,17 @@
+.container{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 5px 0px;
+    border-radius: 3px;
+    }
+    .container:hover{
+        background-color: #EDEEF7;
+
+
+    }
+    .container:active
+    {
+        background-color: #B8B5FF;
+    }

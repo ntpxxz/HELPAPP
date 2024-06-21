@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import LeftSideBar from "@/components/layout/LeftSideBar";
-import SideBar from "@/components/layout/SideBar";
-import { Button } from "../components/ui/button";
-import TopBar from "@/components/layout/TopBar";
+import  SideBar  from "@/components/layout/Sidebar/SideBar"
 import { Header } from "@/components/layout/Header";
 
 
@@ -23,11 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={'${inter.className} flex items-start justify-between'}>  
-     
-          <SideBar/>          
-          <main className="grid w-full h-50 pl-[200px]">
+     <div className="hidden lg:flex min-w-[300px] border-r min-h-screen">
+     <SideBar/>    
+     </div>
+             
+          <main className="grid w-full h-full" >
           <Header/>
+          <div className="p-4">
+            
           {children}       
+          </div>
           </main>       
       </body>
     </html>

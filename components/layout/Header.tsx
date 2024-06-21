@@ -28,14 +28,11 @@ export const Header = () => {
   read: false
 },
 
-
-
-
   ])
   return (
     <div className='grid grid-cols-2 gap-2 p-2 border-b'>
       <CommandDemo />
-      <div className='flex items-center justify-center'>
+      <div className='flex items-center justify-end'>
        
         <DropdownMenu>
           <DropdownMenuTrigger asChild>  

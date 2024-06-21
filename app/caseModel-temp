@@ -1,0 +1,22 @@
+// In another file where you import getModel
+import caseModel from '@/models/caseModel'
+
+const CaseModel = new caseModel();
+
+const newCase = new CaseModel({
+  case_id: "1234",
+  date: new Date(),
+  name: "Sample Case6",
+  section: "PD",
+  Eq_name: "PC068994",
+  Detail: "Test human error",
+  Status: "pending",
+  
+  // ... other properties
+});
+
+console.log("Created new case object:", newCase);
+
+newCase.save()
+  .then(() => console.log("Case created successfully!"))
+  .catch((err: any) => console.error(err))
