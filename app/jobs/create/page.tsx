@@ -71,7 +71,7 @@ export default function ProfileForm() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {  
     try {
-      const response = await fetch('/api/cases', {
+      const response = await fetch('api/cases', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values), // Send the form data from `values`
